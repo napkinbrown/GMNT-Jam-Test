@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,21 +10,20 @@ public class PaddleMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        rb2d = GetComponent<Rigidbody2D>();
+        //paddle = GameObject.FindGameObjectWithTag("Paddle");
 		
 	}
 
     // Update is called once per frame
     void Update()
     {
-        
-        Vector3 moveSpeed = new Vector3(5.0f, 0, 0);
+        Vector3 moveSpeed = new Vector3(.2f, 0, 0);
 
-        if (Input.GetKeyDown("Left") || Input.GetKeyDown("A")) {
+        if (Input.GetKey(KeyCode.A)) {
             paddle.transform.position -= moveSpeed;
         }
 
-        if (Input.GetKeyDown("Right") || Input.GetKeyDown("D"))
+        if (Input.GetKey(KeyCode.D))
         {
             paddle.transform.position += moveSpeed;
         }

@@ -20,8 +20,6 @@ public class BallController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		Debug.Log(rb.velocity.magnitude);
-		
 		if (rb.velocity.magnitude > maxSpeed) 
 		{
 			rb.velocity = rb.velocity.normalized * maxSpeed;
