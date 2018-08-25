@@ -23,9 +23,14 @@ public class BallController : MonoBehaviour {
         rangeMax = .75f;
         initVector = new Vector2(Random.Range(rangeMin, rangeMax), Random.value);
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
+
+    // Update is called once per frame
+    void FixedUpdate () {
 		if (rb.velocity.magnitude > maxSpeed) 
 		{
 			rb.velocity = rb.velocity.normalized * maxSpeed;
