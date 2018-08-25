@@ -452,11 +452,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4334877419460380, guid: 726d1e5932a31b24db8f6f278fb7d80c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4334877419460380, guid: 726d1e5932a31b24db8f6f278fb7d80c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.73
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4334877419460380, guid: 726d1e5932a31b24db8f6f278fb7d80c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -482,6 +482,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212485311500764974, guid: 726d1e5932a31b24db8f6f278fb7d80c,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a214fb9fa46564ff789da8a16cc85dee,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 726d1e5932a31b24db8f6f278fb7d80c, type: 2}
   m_IsPrefabAsset: 0
@@ -538,7 +544,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3a75a1a6022804591b6a8fd1ee1cbf24, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b1fa245e4fa44958975c873730998a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -556,7 +562,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207527417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -1.79, z: 0}
+  m_LocalPosition: {x: 0, y: -2.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 246329251}
@@ -575,7 +581,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14958294, y: -1.010775}
+  m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.3938717, y: 0.33433965}
   m_Direction: 1
 --- !u!114 &1207527422
@@ -600,7 +606,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4199709947732162, guid: 9ab976842362f4518a3536adf84d3bab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4199709947732162, guid: 9ab976842362f4518a3536adf84d3bab, type: 2}
       propertyPath: m_LocalPosition.y
@@ -635,6 +641,29 @@ Prefab:
       propertyPath: brickHealth
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114794331108830360, guid: 9ab976842362f4518a3536adf84d3bab,
+        type: 2}
+      propertyPath: wornBrick
+      value: 
+      objectReference: {fileID: 21300000, guid: 574ccc07ec532439cbbaf0e34a34c61b,
+        type: 3}
+    - target: {fileID: 114794331108830360, guid: 9ab976842362f4518a3536adf84d3bab,
+        type: 2}
+      propertyPath: nearBrokenBrick
+      value: 
+      objectReference: {fileID: 21300000, guid: 0d047ce44a35c410196dbb5d95259e7c,
+        type: 3}
+    - target: {fileID: 114794331108830360, guid: 9ab976842362f4518a3536adf84d3bab,
+        type: 2}
+      propertyPath: brickHealthMax
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 212834101728428788, guid: 9ab976842362f4518a3536adf84d3bab,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5ba690bb3daf47f5982127e5ccea338,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ab976842362f4518a3536adf84d3bab, type: 2}
   m_IsPrefabAsset: 0
@@ -655,11 +684,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13401186, y: 0.45798945}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 3}
+    oldSize: {x: 1.3, y: 0.65}
     newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -680,11 +709,11 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13075444, y: 0.46300972}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 3}
+    oldSize: {x: 1.3, y: 0.65}
     newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
