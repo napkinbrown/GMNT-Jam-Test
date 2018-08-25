@@ -8,8 +8,8 @@ public class BallController : MonoBehaviour {
 	public float initSpeed;
 	public Rigidbody2D rb;
 
-    public float rangeMin;
-    public float rangeMax;
+    public float leftAngle;
+    public float rightAngle;
 	
 	private float currentSpeed;
 
@@ -19,9 +19,9 @@ public class BallController : MonoBehaviour {
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
 		currentSpeed = initSpeed;
-        rangeMin = -.75f;
-        rangeMax = .75f;
-        initVector = new Vector2(Random.Range(rangeMin, rangeMax), Random.value);
+        leftAngle = -.75f;
+        rightAngle = .75f;
+        initVector = new Vector2(Random.Range(leftAngle, rightAngle), Random.value);
 	}
 	
 	// Update is called once per frame
@@ -34,7 +34,6 @@ public class BallController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
             transform.parent = null;
 
-            //rb.AddForce(new Vector2(Random.Range(-1, 1), Random.value) * currentSpeed, ForceMode2D.Impulse);
             rb.AddForce(initVector * currentSpeed 
                         / Mathf.Sqrt(Mathf.Pow(initVector.x, 2) 
                                      + Mathf.Pow(initVector.y, 2)), ForceMode2D.Impulse);
